@@ -136,13 +136,9 @@
 
 //Code 08 
 async function getACuteDogPhoto(){
-    try {const res = await fetch('https://dog.ceo/api/breeds/image/random')
+    const res = await fetch('https://dog.ceo/api/breeds/image/random')
     const data = await res.json()
     console.log(data)
-    }
-    catch{
-    console.log(new error = ${err});    
-    }
 }
 getACuteDogPhoto()
 
